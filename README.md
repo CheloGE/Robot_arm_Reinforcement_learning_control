@@ -15,7 +15,7 @@ All commands below must be run in the project's folder `cd <path_to_the_folder_w
 
     For linux:
     1. A single robot-arm problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
-    2. Multiple robot-ar problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+    2. Multiple robot-arms problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
 
 ### Install dependencies with docker
 

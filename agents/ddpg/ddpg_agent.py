@@ -52,7 +52,7 @@ class DDPG_Agent():
 
         # Learn, if enough samples are available in memory
         if len(self.memory) > BATCH_SIZE:
-            experiences = self.memory.sample()
+            experiences = self.memory.sample(device)
             self.learn(experiences, GAMMA)
 
     def act(self, state, add_noise=True):
