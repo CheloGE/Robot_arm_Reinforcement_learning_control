@@ -9,6 +9,16 @@ The goal of this repo is to train an agent in the form of a 2-joint robot arm an
 
 All commands below must be run in the project's folder `cd <path_to_the_folder_with_this_project>`
 
+### First lets donwload all required files
+
+* Make sure to download the environment builded in unity with ml_agents extension
+
+    For linux:
+    1. A single robot-arm problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+    2. Multiple robot-ar problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+
+### Install dependencies with docker
+
 1. Build Dockerfile
 
     `docker build -t unity_ml_agents:pytorch .`
@@ -23,9 +33,5 @@ All commands below must be run in the project's folder `cd <path_to_the_folder_w
 
     `docker exec -it door_detection_ML bash`
 
-4. Make sure to download the build environment builded in unity with ml_agents extension
 
-    For linux:
-    1. A single robot-arm problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
-    2. Multiple robot-ar problem scenario: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
 
