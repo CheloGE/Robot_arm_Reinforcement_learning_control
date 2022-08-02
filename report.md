@@ -62,7 +62,7 @@ After training for 250 episodes we finally solved the problem which is better il
 
 where we can see that around episode 120 we solve the problem because the mean score of the 20 agents scored more than 30 in avarage in the next 100 consecutive episodes. 
 
-We also recorded the model at different stages of the model which are all stored in the folder: [checkpoints](checkpoints/). This allowed us to see how the model was learning during the training process, as illustrated below:
+We also recorded the model at different stages of the training process which are all stored in the folder: [checkpoints](checkpoints/). This allowed us to see how the model was learning during the training process, as illustrated below:
 
 <p align="center">
 <img src="docs/training_process.gif" style="width:500px;"/>
