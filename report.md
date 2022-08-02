@@ -81,9 +81,9 @@ As you can see the model does get a little bit more stable (blue line) compared 
 * First run mean score: 30.61899931561202
 * Second run mean  score: 31.413505964520077
 
-### Extrapolation to the One-agent case
+### Extrapolation to the Single-agent case
 
-Since we already got a good policy using the multi-agent approach. I decided to use the same policy for the one agent case. Thus, I run 100 episodes with this policy learned in the one-agent environment where I got an avarage score of `30.82739226` which is illustrated in the following plot of rewards:
+Since we already got a good policy using the multi-agent approach. I decided to use the same policy for the single agent case. Thus, I run 100 episodes with this policy learned in the one-agent environment where I got an avarage score of `30.82739226` which is illustrated in the following plot of rewards:
 
 ![](docs/one_aget_plot_rewards.png)
 
