@@ -18,11 +18,10 @@ The algorithm was based on the following implementation from Udacity's DDPG agen
 
 The main changes done to it were to provide extra support for the multiple agents case. This was done specifically in the following lines:
 
-```
+```python
 Q_targets = (rewards + (gamma * Q_targets_next.view(No_agents, -1) * (1 - dones))).view(-1, 1) # Support to learn for N agents`
 
 torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), 1) # This line mitigates exploding gradients
-
 ```
 
 The later line was crucial because without it the DDPG model can't hold the score throught the episodes because as 20 agents are updating the networks the gradient update leads to [exploding gradients](https://machinelearningmastery.com/exploding-gradients-in-neural-networks/)
