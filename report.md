@@ -16,7 +16,7 @@ Some of the features that DDPG implements in its algorithm are the following:
 
 The algorithm was based on the following implementation from Udacity's DDPG agent: [here](https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/ddpg_agent.py)
 
-The main changes done to it were extra support for multiple agents in the following lines:
+The main changes done to it were to provide extra support for the multiple agents case. This was done specifically in the following lines:
 
 ```
 Q_targets = (rewards + (gamma * Q_targets_next.view(No_agents, -1) * (1 - dones))).view(-1, 1) # Support to learn for N agents`
