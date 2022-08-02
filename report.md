@@ -14,7 +14,7 @@ Some of the features that DDPG implements in its algorithm are the following:
 * Implements **"soft updates"** which contrary to DQN the critic network is updated slowly with certain percentage of the actor weights on each episode. This makes the model more stable.
 * **Ornstein–Uhlenbeck Noise** which is a noise process that has some properties for letting the agent explore. You can check more details on the concept in the [Ornstein–Uhlenbeck process](https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process) page. It essentially generates random samples from a Gaussian (Normal) distribution, but each sample affects the next one such that two consecutive samples are more likely to be closer together than further apart. In this sense, the process is Markovian in nature. We use this noise because we want that our actions are consecutive (as continuous as possible) otherwise the signals can be jerky and jump from one value to another which is not desirable in control systems.
 
-The algorithm was based on the following implementation from Udacity's implementation of DDPG [here](https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/ddpg_agent.py)
+The algorithm was based on the following implementation from Udacity's DDPG agent: [here](https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/ddpg_agent.py)
 
 The main changes done to it were extra support for multiple agents in the following lines:
 
