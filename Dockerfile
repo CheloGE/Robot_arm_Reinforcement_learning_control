@@ -51,8 +51,8 @@ RUN apt-get update --fix-missing && apt-get upgrade -y && apt-get install -y \
 
 WORKDIR /project
 
-# COPY requirements.txt .
-# RUN pip3 install -r requirements.txt
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
 
 # nvidia-container-runtime
 ENV NVIDIA_VISIBLE_DEVICES \
