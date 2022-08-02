@@ -50,6 +50,25 @@ However, we noticed that if we keep these parameters static, the model converges
 
 !['learning_rage_curve'](docs/actor-critic_learning_rate.jpg)
 
+### Architectures
+
+Since DDPG is an actor-critic method we have two networks, one for the actor and another for the critic. 
+
+#### Actor
+
+For the actor the input is the state vector, which is of a 33 size, and has the following architecture:
+
+![](docs/actor_net.png)
+
+#### Critic
+
+For the actor the input is the state vector and the action space, which are of a 33 and 4 size respectively, Then it has the following architecture:
+
+![](docs/critic_net.png)
+
+As you can see they are simple networks that have 2-hidden layers. One with 400 neuros and the other with 300 neurons. The only difference is the output where the actor has 4 neurons because it predicts the actions and the critic has only 1 because it predict the value function.
+
+
 ## Results
 
 After training for 250 episodes we finally solved the problem which is better illustrated by the following plot of rewards:
