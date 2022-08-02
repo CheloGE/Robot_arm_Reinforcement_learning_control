@@ -96,7 +96,7 @@ We have also recorded a comparison of the single agent before and after training
 
 ## Future work ideas
 
-To improve the model I have some ideas that I would love to implement, the following is a list of all the ideas I have to try with this project:
+To improve the performance in this project I have some ideas that I would love to implement, the following is a list of all the ideas I have to try with this project:
 
 1. Implement Trust Region Policy Optimization (TRPO) and Truncated Natural Policy Gradient (TNPG) because based on [this paper](https://arxiv.org/abs/1604.06778) they should achieve a better performance.
 2. Implement Proximal Policy Optimization (PPO) which has demostrated great performance as shown in the [openai page](https://openai.com/blog/openai-baselines-ppo/)
