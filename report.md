@@ -76,7 +76,7 @@ Therefore, for the second run we started from the 125 episode with a `learning r
 |:--:|
 !['second_run_plot_rewards'](docs/second_run_plot_rewards.png)
 
-As you can see the model does get a little bit more stable (blue line) compared to the old version (orange line), but it is not as significant I thought. However, the agent got a higher overall average score which was great.
+As you can see the model does get a little bit more stable (blue line) compared to the old version (orange line), but it is not as significant as I thought. However, the agent got a higher overall average score which was great.
 
 * First run mean score: 30.61899931561202
 * Second run mean  score: 31.413505964520077
