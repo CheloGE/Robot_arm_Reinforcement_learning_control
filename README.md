@@ -46,9 +46,9 @@ For this project a docker container was created, please follow the following ste
 
 3. Everytime we want to run container
 
-    `docker start door_detection_ML`
+    `docker start mlagents_unity`
 
-    `docker exec -it door_detection_ML bash`
+    `docker exec -it mlagents_unity bash`
 
 ## How to run
 
